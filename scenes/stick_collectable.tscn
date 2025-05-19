@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://ki8sat5rrisl"]
+
+[ext_resource type="Script" uid="uid://4ql15ogxfqxe" path="res://stick_collectable.gd" id="1_m43rf"]
+[ext_resource type="Resource" uid="uid://dmfa8rhndrd1r" path="res://inventory/stick.tres" id="2_gne4f"]
+[ext_resource type="Texture2D" uid="uid://epqmjquuw8h4" path="res://assets/envinement/stick-icon.png" id="2_nv3jk"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_gne4f"]
+radius = 47.2652
+
+[node name="stick_collectable" type="StaticBody2D"]
+script = ExtResource("1_m43rf")
+item = ExtResource("2_gne4f")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(2.91, 2.91)
+texture = ExtResource("2_nv3jk")
+
+[node name="inter" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="inter"]
+shape = SubResource("CircleShape2D_gne4f")
+
+[connection signal="body_entered" from="inter" to="." method="_on_inter_body_entered"]
