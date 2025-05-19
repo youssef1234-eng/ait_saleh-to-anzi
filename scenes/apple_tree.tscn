@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://cdbtcfmgarrmf"]
 
-[ext_resource type="Script" uid="uid://d4gophfdehc5q" path="res://scripts/apple_tree.gd" id="1_66v30"]
+[ext_resource type="Script" uid="uid://d4gophfdehc5q" path="res://inventory/apple_tree.gd" id="1_66v30"]
 [ext_resource type="Texture2D" uid="uid://73qfs3q26xd3" path="res://assets/envinement/survivalgame-appletree.png" id="2_veaef"]
 [ext_resource type="Resource" uid="uid://n44py00vl4dn" path="res://inventory/items/apple.tres" id="2_y0035"]
 

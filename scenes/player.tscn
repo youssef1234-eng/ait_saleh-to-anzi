@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://c1jrpqip4se2w" path="res://assets/character/survivalgame-player-green (1).png" id="1_3vyb7"]
 [ext_resource type="Script" uid="uid://bc44x3bcwtu5w" path="res://scripts/player.gd" id="1_g2els"]
-[ext_resource type="Resource" uid="uid://omw1758y2x0r" path="res://inventory/playerinv.tres" id="2_qhqgy"]
+[ext_resource type="Resource" path="res://inventory/playerinv.tres" id="2_qhqgy"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_g2els"]
 radius = 4.46
