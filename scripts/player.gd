@@ -2,14 +2,13 @@ extends CharacterBody2D
 
 var speed = 100
 var player_state
-var bow_equiped = true
-var bow_cooldown = true
-var arrow = preload("res://scenes/arrow.tscn")
+#var bow_equiped = true ممنوع المسح
+#var bow_cooldown = true ممنوع المسح
+#var arrow = preload("res://scenes/arrow.tscn") ممنوع المسح
 
 
 
 @export var inv: Inv
-
 func _physics_process(delta: float) -> void:
 	var direction = Input.get_vector("left","right","up","down")
 	
@@ -27,21 +26,21 @@ func _physics_process(delta: float) -> void:
 	
 	
 	
-	var mouse_pos = get_global_mouse_position()
-	$Marker2D.look_at(mouse_pos)
+	#var mouse_pos = get_global_mouse_position() ممنوع المسح
+	#$Marker2D.look_at(mouse_pos) ممنوع المسح
 	
-	if Input.is_action_just_pressed("shoot") and bow_equiped and bow_cooldown:
-		bow_cooldown = false
-		var arrow_instance = arrow.instantiate()
-		arrow_instance.rotation = $Marker2D.rotation
-		arrow_instance.global_position = $Marker2D.global_position
-		add_child(arrow_instance)
+	#if Input.is_action_just_pressed("shoot") and bow_equiped and bow_cooldown: ممنوع المسح
+		#bow_cooldown = false ممنوع المسح
+		#var arrow_instance = arrow.instantiate() ممنوع المسح
+		#arrow_instance.rotation = $Marker2D.rotation ممنوع المسح
+		#arrow_instance.global_position = $Marker2D.global_position ممنوع المسح  
+		#add_child(arrow_instance) ممنوع المسح
 	
 	
-	await get_tree().create_timer(0.4).timeout
-	bow_cooldown = true
-
-
+	#await get_tree().create_timer(0.4).timeout ممنوع المسح
+	#bow_cooldown = true ممنوع المسح
+	
+	
 	play_anim(direction)
 	
 func play_anim(dir):
@@ -71,7 +70,7 @@ func player():
 	
 	pass
 
-func collect(item):
-	inv.insert(item)
+#func collect(item): ممنوع المسح
+	#inv.insert(item) ممنوع المسح
 	
 	
